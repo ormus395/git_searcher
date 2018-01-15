@@ -1,4 +1,5 @@
 import React from 'react';        
+import UserDetails from '../UserDetails/UserDetails';
 
 import css from './profile.css'
 const UserProfile = ({userProfile}) => (

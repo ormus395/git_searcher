@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 //Dev componenets
 import Button from '../components/button/Button';
 import SearchBar from '../components/search/Search';
-import UserProfile from '../components/user_profile/UserProfile';
+import UserContainer from '../components/UserContainer/UserContainer';
 
 //CSS
 import CSS from './App.css';
@@ -47,7 +47,8 @@ class App extends Component {
         <SearchBar handleChange={this.handleChange} userName={this.props.username} />
         <Button onAction={this.onUserSearch} btnText={'Search'} />
         <hr/>
-        {Object.keys(userProfile).length < 1 ? 'Loading...': <UserProfile userProfile={userProfile} />}
+        {Object.keys(userProfile).length < 1 ? 'Loading...': (<UserContainer userProfile={userProfile} />)}
+        
       </div>
     );
   }

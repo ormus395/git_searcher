@@ -1,0 +1,18 @@
+.UserDetails ul {
+  display: flex;
+}
+
+.UserDetails ul li {
+  margin: 0 25px;
+  padding: 5px;
+  list-style: none;
+  border-left: 2px solid black;
+}
+
+.UserDetails ul li:hover {
+  border-bottom: 2px solid black;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
